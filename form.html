@@ -12,23 +12,54 @@
             color:rgb(18, 61, 134);
         }
         .DOB{
-            margin-left: 400px;;
+            margin-left: 466px;
         }
         .date{
             margin-left: 100px;
         }
-        .ph{
-            margin-left: 200px;
+        .gender{
+            margin-bottom: 50px;
         }
         .phone{
-            margin-left: 250px ;
+            margin-left: 130px;
         }
+        .ph{
+            
+            margin-left: 100px;
+        }
+        .email{
+            
+            margin-left: 372px;
+        }
+        .em{
+            
+            margin-left: 100px;
+        }
+        .pay{
+            
+            margin-left: 150px;
+        }
+        .card{
+            margin-left: 100px
+        }
+        
+        .dd{
+            margin-left: 1000px
+        }
+        .details{
+            margin-left: 100px
+        }
+        .sign{
+           
+            margin-left: 1000px
+        }
+        
     </style>
 </head>
 <body>
     <h1><center> Event Registration Form </center></h1><br><br>
     <h3>About This Event </h3><br><br>
-    <table border="1" cellpadding="1px" width="100%">
+    <table border="1" cellpadding="1px" width="80%">
            
         <tr>
              <th>Event Name</th>
@@ -51,15 +82,39 @@
     <hr></hr><br>
     <h3>Participant Information</h3><br>
     <form action="#" method="post" enctype="multipart/form-data">
-        <label class="full">Full Name</label><label class="DOB">Date of Birth</label> 
-        <input type="text" size="50px" name="name"><input class="date" type="date" size="50px" name="date"><br><br>
-        <label class="gen">Gender</label><label class="ph">Phone Number</label> 
-        <input class="phone" size="25px" name="phone">
-        
-
-
-        
-    <!---- Name:<input type="text" name="name"><br><br>
+        <label class="full">Full Name</label> <label class="DOB">Date of Birth</label>
+        <br>
+        <input type="text" size="60px" name="fullname"><input class="date" type="date" size="60px" name="date"><br><br>
+        <label class="gender">Gender</label><label class="phone">Phone Number</label><label class="email">Email</label>
+        <br>
+        <input type="radio" name="gender" value="male">Male <br>
+        <input class="gen" type="radio" name="gender" value="female">Female
+        <input class="ph" type="tel" size="50px" name="number">
+        <input class="em" type="email" size="50px" name="email"><br><br>
+        <article>Where did you hear about this virtual event?</article><br>
+        <input type="checkbox" name="data" value="Facebook">Facebook
+        <input type="checkbox" name="data" value="Youtube">Youtube
+        <input type="checkbox" name="data" value="Instagram">Instagram
+        <input type="checkbox" name="data" value="Twitter">Twitter
+        <input type="checkbox" name="data" value="Other">Other:<input type="text" size="25px"><br><br>
+        <hr></hr>
+        <h3>Payment Information</h3>
+        <br>
+        <label class="n">Number of Tickets </label><label class="pay">Payment Method <br></label>
+        <br>
+        <input type="number" size="25px" name="number"><input class="card" type="radio" name="card1" value="creditcard">Credit Card &nbsp;
+        <input type="radio" name="card2" value="creditcard">Debit Card &nbsp;
+        <input type="radio" name="card3" value="creditcard">Cash &nbsp;
+        <input type="radio" name="card4" value="creditcard">Cheque &nbsp;<br><br>
+        <label class="p">I understand that participation in this event may involve some degree of risk.I release WebinarPros LLC from any liability for injury,loss or damage to personal property.</label><label class="sign" name="sign">Signature</label>
+        <input type="text" size="25px" name="sign">
+        <br><br>
+        <label class="inf"><input type="radio">Yes,I understand</label><label class="dd">Date Signed<input type="date"></label><br><br>
+        <hr>
+      <label class="pp"> <strong>WebinarPros LLc</strong></label><label class="details"><center><img src="image/face.png" width="30" height="30">&nbsp;&nbsp;<img src="image/insta.png" width="30" height="30">&nbsp;&nbsp;<img src="image/ODF.png" ></center></label><P><center>Thank you for registering!For inquires and updates,</center></P><P><center>follow us at webinarprosLLC on our social media</center></P>
+      
+      
+           <!---- Name:<input type="text" name="name"><br><br>
         Email:<input type="email" name="email"><br><br>
         Password:<input type="password" name="password"><br><br>
         DOB:<input type="date" name="date"><br><br>
