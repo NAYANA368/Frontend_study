@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+           background-color: rgb(133, 219, 46);
+           padding: 10px;
+           width: 562px;
+           margin: 100px;
+
+           height: 799px;
+}
+       .n{
+        margin-left: 100px;
+       }
+       .b{
+           border-radius: 15px;
+           background-color: black;
+           color: white;
+           text-align: center;
+           
+           
+       }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post" class="form"  >
+        <label><h3>Step 1: Your details</h3></label>
+        <fieldset>
+         <label><strong>Name</strong></label>
+         <input type="text" name="name" size="40px" placeholder="First and last name" class="n"><br><br>
+         <label><strong>Email</strong></label>
+         <input type="email" name="email" size="40px" placeholder="example@domain.com" class="n"><br><br>
+         <label><strong>Phone</strong></label>
+         <input type="tel" name="phone" size="40px" placeholder="Eg.+44750000000" class="n"><br><br>
+         </fieldset><br>
+         <label><h3>Step 2: Delivery address</h3></label>
+         <fieldset>
+         <label><strong>Address</strong>
+        <textarea name="address" rows="8px" class="n"></textarea></label><br><br>
+         <label><strong>Postcode</strong>
+        <input type="text" name="code" size="40px" class="n"><br><br></label>
+         <label><strong>Country</strong>
+        <input type="text" name="country" size="40px" class="n" list="countrys"></label>
+         </fieldset>
+         <label><h3>Step 3: Card details</h3></label>
+         <fieldset>
+         <label><strong>Card type</strong></label><br><br>
+         <input type="radio" name="card1" value="visa">
+         <img src="image/visa.jpeg" width="15" height="15">&nbsp;VISA
+         <input type="radio" name="card2" value="AmEx">
+         <img src="image/amex.jpeg" width="15" height="15">&nbsp;AmEx
+        <input type="radio" name="card3" value="Mastercard"><img src="image/mc.jpg" width="20" height="15">&nbsp;MASTERCARD<br><br>
+         <label><strong>Card number</strong><input type="text" name="num" size="40px" class="n"></label><br><br>
+         <label><strong>Security code</strong><input type="text" name="sec" size="40px" class="n"></label><br><br>
+         <label><strong>Name on card</strong><input type="text" name="sec" size="40px" class="n" placeholder="Exact name as on the card"></label>
+          </fieldset><br>
+          <datalist id="countrys">
+          <option>INDIA</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>CANADA</option>
+          </datalist>
+           <center> <button class="b" >BUY IT!</button></center>
+        
+    </form>
+   <!-- <datalist id="list1">
+        <option>nayanakrishnank2016@gmail.com</option>
+        <option>arunima@gmail.com</option>
+        <option>yaswanth@gmail.com</option>
+        <option>blessing@gmail.com</option>
+    </datalist>
+    <fieldset>
+        <legend style= "border:1px solid red; padding: 5px; background color:yellow ">Form</legend>
+        <h3>Fill this Form!!</h3>
+    <form action="#" method="post" enctype="multipart/form-data">
+    Name:<input type="text" name="name"><br><br>
+        Email:<input type="email" name="email" list="list1"><br><br>
+        Password:<input type="password" name="password"><br><br>
+        DOB:<input type="date" name="date"><br><br>
+        Address:<textarea name="address"></textarea><br><br>
+        Search:<input type="search" name="search"><br><br>
+        Phone:<input type="tel" name="phone"><br><br>
+        Url:<input type="url" name="url"><br><br>
+        Quantity:<input type="number" name="quantity"><br><br>
+        Gender:<input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">Female<br><br>
+        Courses:<select name="courses" size="4">
+            <optgroup label="Software">
+            <option value="java">JAVA</option>
+            <option value="python">PYTHON</option>
+            <option value="php">PHP</option>
+        </optgroup>
+        <optgroup label="Networking"></optgroup>
+            <option value="mern">MERN</option>
+            <option value="mean">MEAN</option>
+            </optgroup>
+        </select><br><br>
+        Cards:<input type="checkbox" name="card1" value="visa">VISA
+              <input type="checkbox" name="card2" value="mastercard">MASTERCARD<br><br>
+        Avatar:<input type="file" name="file"><br><br>
+        Color:<input type="color" name="color"><br><br>
+        <button formaction="kids.jsp">Submit to kids</button>
+        <input type="submit" value="submit to adults" formaction="adults.jsp"><br>
+        </fieldset>-->
+             <!--<input type="submit">--> 
+             
+              </form>
+</body>
+</html>
