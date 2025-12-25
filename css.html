@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .internal{
+            color: blueviolet;
+        }
+        #p{
+            color: aqua;
+        }
+        h4{
+            border: 3px solid burlywood;
+        }
+        [alt]{
+            border: 3px solid seagreen;
+            width: 250px;
+        }
+        [alt=logogame]{
+            border: solid palegoldenrod;
+        }
+        [alt ^=logo]{
+            height: 200px;
+        }
+        [alt $=logo]{
+            height: 250px;
+        }
+        [alt *=logo]{
+            height: 250px;
+        }
+        a:hover{
+            color: blanchedalmond;
+        }
+        a:active{
+            color: brown;
+        }
+        a:visited{
+            color:black;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1  style="color: red;">Welcome,to inline css</h1>
+    <h2 class="internal">Welcome to internal css</h2>
+    <h2 class="internal">MULTIPLE CLASSES</h2>
+    <h3 class="external">Welcome to external css</h3>
+    <h4>SELECTORS</h4>
+    <h4 id="p">CSS SELECTORS,1.ID</h4>
+     <img src="image/game.jpg" alt="logogame">
+     <img src="image/elec.jpg" alt="eleclogo"><br>
+     <a href="css.html">Go to home</a>
+</body>
+</html>

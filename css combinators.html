@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Combinators Example</title>
+<style>
+/* 1. Descendant (space) */
+div p { 
+  color: blue;
+}
+
+/* 2. Child (>) */
+div > p {
+  font-weight: bold;
+}
+
+/* 3. Adjacent Sibling (+) */
+h2 + p {
+  background-color: yellow;
+}
+
+/* 4. General Sibling (~) */
+h3 ~ p {
+  border: 1px solid green;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Combinators Demo</h1>
+
+<!-- Descendant & Child -->
+<div>
+  <p>Direct child of div (blue text, bold).</p>
+  <section>
+    <p>Descendant inside section (blue text only).</p>
+  </section>
+</div>
+
+<hr>
+
+<!-- Adjacent Sibling -->
+<h2>Heading H2</h2>
+<p>This is right after H2 (yellow background).</p>
+<p>This is after another paragraph (no yellow).</p>
+
+<hr>
+
+<!-- General Sibling -->
+<h3>Heading H3</h3>
+<p>Paragraph after H3 (green border).</p>
+<p>Another paragraph after H3 (green border).</p>
+<div>Not a paragraph, so no green border.</div>
+<p>Paragraph after div but still after H3 (green border).</p>
+
+</body>
+</html>
