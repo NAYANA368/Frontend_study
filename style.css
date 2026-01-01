@@ -1,0 +1,164 @@
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .bg{
+            background: url(image/game.jpg);
+            background-size: contain;
+        }
+        .i{
+            padding-right: 10px;
+        }
+
+        .logo{
+            margin-left: 0%;
+            margin-bottom: 10px;
+            font-style: normal;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+
+        .header{
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            background-color: black;
+            background: url(image/mw.png);
+            color: #fff;
+            font-style: bolder ;
+            font-weight: 20px;
+            width: auto; height: 50px;
+            position: sticky;
+            top:0px
+        
+            
+        }
+
+        .about{
+            margin-left: 653px;
+            margin-top:  -33px;
+            padding-top: 14px;
+            word-spacing: 80px;
+            text-align: center;
+            position: sticky;
+        }
+
+        .content{
+            background-color: rgb(68, 122, 176);
+            width: 1512px;
+            height: 1500px;
+            margin-top: 40px;
+            position: relative;
+            z-index: -10;
+        }
+
+        .info{
+            background-color: aqua;
+            background-image: url(image/sp1.png);
+            background-size: contain;
+            background-position: right center;
+            color: purple;
+            width: 150px ;
+            height: 150px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500px;
+            display: inline;
+            margin-left: 86px;
+            position: absolute;
+            top: 159px;
+            padding: 90px;
+        }
+
+    
+    
+        .info1{
+            background-color: aqua;
+            background-image: url(image/mw1.jpg);
+            background-size: contain;
+            background-position: left center;
+            color: rgb(97, 8, 87);
+            width: 150px ;
+            height: 150px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500px;
+            display: inline;
+            margin-left: 579px;
+            position: absolute;
+            top: 10px;
+            padding: 90px;
+        }
+
+        .info2{
+            background-color: aqua;
+            background-image: url(image/st.jpg);
+            background-size: contain;
+            background-position: left center;
+            color: rgb(97, 8, 87);
+            width: 150px ;
+            height: 150px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500px;
+            display: inline;
+            margin-left: 1058px;
+            position: absolute;
+            top: 10px;
+            padding: 90px;
+        }
+
+        .img1{
+            background: url(image/images.jpg);
+            width: 200px;height: 200px;
+            position: absolute;
+            z-index: -10;
+        }
+
+        h2{
+            position: relative;
+            bottom: -381px;
+        }
+
+        .ab{
+            background-color: black;
+            color: #fff;
+            font-size: 100px;
+        }
+
+        .insta{
+            position: fixed;
+            right: -12%;
+            bottom: -10%;
+            background: url(image/insta.jpg);
+            background-repeat: no-repeat;
+            
+            background-size: 31px;
+            width: 250px;height: 197px;
+            z-index: 10;
+        }
+         .fb{
+            position: fixed;
+            bottom: -4%;
+            right: -12%;
+            background: url(image/fb);
+            background-repeat: no-repeat;
+            
+            background-size: 31px;
+            width: 250px;height: 197px;
+            z-index: 10;
+         }
+         .tw{
+            position: fixed;
+            bottom: -15%;
+            right: -12%;
+            background: url(image/tw.png);
+            background-repeat: no-repeat;
+            
+            background-size: 31px;
+            width: 250px;height: 197px;
+            z-index: 10;
+         }
+
+
+    
