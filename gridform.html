@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .container{
+            display: grid;
+            grid-template-rows: 100px 100px ;
+            grid-template-columns: 1458px  ;
+            gap:8px;
+            
+        }
+        .box1{
+            background-color: rgb(60, 7, 60);
+            text-align: center;
+            margin-left: 10px;
+        }  
+        .box2{
+            
+            
+            height: 800px;
+            border: 1px solid black;
+            margin-left: 5px;
+        }
+        .b{
+            border-radius: 15px;
+            margin-left: 284px;
+            padding-left: 216px;
+        }
+        h1{
+            position: relative;
+            left: -100px;
+            top: 15px;
+            color: #fff;
+        }
+        .form{
+           /* background-color: rgb(206, 119, 190); */
+           opacity: 90%;
+           filter: drop-shadow(5px);
+           height: 700px;width: 500px;
+           border-radius: 15px;
+           position: relative;
+           left: -200px;
+           bottom: -50px;
+           background-color: rgb(60, 7, 60);
+           /* box-shadow: 150px 150px 150px 150px lightgray inset; */
+           /* border: 5px solid rgba(137, 8, 137, 0.655) */
+        }
+        .label1{
+            height: 50px;
+            font-size: 20px;
+            width: 450px;
+            margin-left: 10px;
+            border-radius: 5px;
+            margin-top:  20px;
+            opacity: 90%;
+            position: relative;
+            top: -245px;
+        }
+        button{
+            height: 50px;
+            font-size: 20px;
+            width: 450px;
+            margin-left: 10px;
+            border-radius: 5px;
+            margin-top:  50px;
+            position: relative;
+            top: -195px;
+            background-color: rgb(156, 26, 149);
+            
+        }
+        .sign{
+            position: relative;
+            top: -175px;
+            left: 20px;
+            color: #fff;
+            font-size: larger;
+        }
+        .login{
+            position: relative;
+            left: 25px;
+            color: rgb(100, 100, 193);
+            font-size: larger;
+        }
+        .block{
+           opacity: 90%;
+           height: 700px;width: 500px;
+           padding-right: 24px;
+           padding-left: 20px;
+           border-radius: 15px;
+           position: relative;
+           left: 398px;
+           top: -667px;
+           border: 5px solid none;
+           background-color: rgb(60, 7, 60);
+        }
+        .img{
+            position: relative;
+            bottom: -43px;
+            right: -23px;
+            width: 450px;
+            height: 300px;
+        }
+        body{
+            background: linear-gradient(#262643, #691849);
+            background-repeat: no-repeat;
+            background-position: contain;
+            height: 1000px;
+        }
+        p{
+            position: relative;
+            bottom: -90px;
+            color: #fff;
+            font-size: larger;
+        }
+        .img2{
+            z-index: -10;
+            position: relative;
+            top: 228px;
+            left: 100px;
+            width: 300px;height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="b box1"><h1>FOOTBALL PLAYER LOGIN FORM</h1></div>
+        <div class="b box2">
+            <div>
+        <form action="#" method="post" class="form"  >
+            <img class="img2" src="image/fc-barcelona.svg">
+        <label><br><h2 style="color: red;position: relative;top: -289px;">&nbsp;REGISTRATION FORM</h2></label><br><br>
+        <input class="label1" type="text" name="name" size="80px" placeholder="Player Name" class="name"><br>
+        <input class="label1" type="email" name="email" size="80px" placeholder="Enter your email" class="email"><br>
+        <input class="label1" type="password" name="password" size="80px" placeholder="Create password" class="password"><br>
+        <input class="label1" type="password" name="password" size="80px" placeholder="Confirm password" class="password"><br>
+        <button>Submit Now</button><br>
+        <p class="sign">Already have an account ?<a class="login" href="">Login now</a></p>
+    </div> 
+    <div class="block">
+        <h2 style="color: red;text-align: center;position: relative;bottom: -20px;">FOOTBALL CONTACT FORM</h2>
+        <img class="img" src="image/footb.jpg"><br>
+        <p>A "football contact form" is a digital or physical document used by players, parents, clubs, and organizations to gather essential information for registration, trial applications, or general communication. These forms typically include personal details (name, contact info, age, DOB), player experience, medical and health information, parental consent for minors, preferred positions.</p>
+    </div>
+        </div>
+    </div>
+       
+</body>
+</html>

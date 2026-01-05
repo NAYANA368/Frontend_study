@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 80vh;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .b{
+            background-color: cornflowerblue;
+            width: 300px;
+            height: 300px;
+            
+        }
+        .box1:hover{
+            filter: blur(10px);
+        }
+        .box2:hover{
+            filter: opacity(20%);
+        }
+        .box3:hover{
+            filter: invert(60%);
+        }
+        .box4:hover{
+            filter: grayscale(70%);
+        }
+        .box5:hover{
+            filter: brightness(500%);
+        }
+        .box6:hover{
+            filter: drop-shadow(5px 5px 9px green);
+        }
+        .box7:hover{
+            filter: saturate(300%);
+        }
+        .box8:hover{
+            filter: sepia(90%);
+        }
+        .box9:hover{
+            filter: hue-rotate(50deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="b box1"><img src="image/w1.jpg" width="300px" height="300px"></div>
+    <div class="b box2"><img src="image/w2.jpg" width="300px" height="300px"></div>
+    <div class="b box3"><img src="image/w3.jpg" width="300px" height="300px"></div>
+    <div class="b box4"><img src="image/w4.jpg" width="300px" height="300px"></div>
+    <div class="b box5"><img src="image/w5.jpg" width="300px" height="300px"></div>
+    <div class="b box6"><img src="image/w6.jpg" width="300px" height="300px"></div>
+    <div class="b box7"><img src="image/w7.jpg" width="300px" height="300px"></div>
+    <div class="b box8"><img src="image/w8.jpg" width="300px" height="300px"></div>
+    <div class="b box9"><img src="image/w9.jpg" width="300px" height="300px"></div>
+    </div>
+</body>
+</html>

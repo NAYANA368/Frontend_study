@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+}
+header{
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    color: #fff;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    bottom: -12px;
+}
+.home{
+    position: relative;
+    bottom: -24px;
+    right: -560px;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about{
+    position: relative;
+    bottom: -24px;
+    right: -647px;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ourproducts{
+    position: relative;
+    bottom: -24px;
+    right: -735px;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.services{
+    position: relative;
+    bottom: -24px;
+    right: -833px;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact{
+    position: relative;
+    bottom: -24px;
+    right: -940px;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content{
+    position: relative;
+    right: 28px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+}
+.img1{
+    display: inline;
+    /* width: 400px;
+    height: 400px; */
+    margin-left: 45px;
+    
+}
