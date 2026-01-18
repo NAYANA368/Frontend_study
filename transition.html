@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Loader Demo</title>
+
+<style>
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    /* font-family: Arial, sans-serif; */
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ddd;        
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}   
+</style>
+
+</head>
+<body>
+
+<div class="loader"></div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: width 0.8s;
+        }
+         .box:hover{
+            width: 300px;
+            
+         } */
+          .box{
+
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            animation-name: myFrame;
+            animation-duration: 2s;
+            animation-delay: 2.5s;
+            animation-iteration-count: 3;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+          }
+
+          @keyframes myFrame{
+
+            from{
+                transform: translate(0);
+            }
+            to{
+                transform: translateX(800px);
+            }
+          }
+    </style>
+</head>
+<body>
+   <div class="box"></div> 
+</body>
+</html>

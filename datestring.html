@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let formatOptions1={
+            weekday:"long",
+            year:"numeric",
+            month:"short",
+            day:"numeric",
+            hour:"numeric",
+            minute:"numeric",
+            second:"numeric",
+            timeZone:"Asia/Kolkata",
+            timeZoneName:"short"
+        };
+        let formatOptions2={
+            year:"numeric",
+            month:"long",
+            day:"numeric"
+        };
+        let charSet="en-GB";
+        let formattedDate1=new Date().toLocaleDateString(charSet,formatOptions1);
+        let dateObj=new Date();
+        let formattedDate2=dateObj.toLocaleDateString(charSet,formatOptions2);
+        document.write(formattedDate1);
+        document.write(formattedDate2);
+    </script>
+</body>
+</html>

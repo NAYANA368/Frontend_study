@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let choice=Number(prompt(
+            "Choose an operation:\n"+
+            "1.To find a value\n"+
+            "2.To filter an array\n"+
+            "3.To find whether a value is included in an array\n"+
+            "4.To find the index\n"+
+            "5.Arrange in ascending\n"+
+            "6.Arrange in descending\n"+
+            "7.Replace a value\n"+
+            "8.Splice an array\n"+
+            "9.Slice an array\n"+
+            "10.Copy values within anarray"
+        ));
+        let str=[100,50,29,5,2,6,"Sam","Anand","Sanu"];
+        switch(choice){
+            case 1:
+                let value = prompt("Enter the value to find:");
+                find=str.find((s)=>s==value);
+                document.write("Result:"+find);
+                break;
+            case 2:
+                let num = prompt("Enter the value to find:");
+                filter=str.filter((i)=>i<=num);
+                document.write("Filtered result:"+filter);
+                break;
+            case 3:
+                let chr = prompt("Enter the character to find:");
+                character=str.includes(chr);
+                document.write("result:"+character);
+                break;
+            case 4:
+                let i = Number(prompt("Enter the value to find index position:"));
+                results=str.indexOf(i);
+                document.write("result:"+results);
+                break;
+            case 5:
+                let numbers = str.filter((nu)=> typeof nu === "number");
+                let strings = str.filter((st) => typeof st === "string");
+
+                let ascend_num = numbers.sort(function(a, b){return a - b;});
+                let ascend_chr = strings.sort();
+                document.write("ascending:"+ascend_num,"<br>");
+                document.write("ascending:"+ascend_chr);
+                break;
+            case 6:
+                let n = str.filter((n)=> typeof n === "number");
+                let s = str.filter((s) => typeof s === "string");
+                let descend_num = n.sort(function(x, y){return x - y;});
+                let descend_chr = s.sort();
+                let reverse_num=n.reverse();
+                let reverse_chr=s.reverse();
+                document.write("descending:"+reverse_num,"<br>");
+                document.write("descending:"+reverse_chr);
+                break;
+            case 7:
+                let a= Number(prompt("Enter a value to be replaced:"));
+                let m=Number(prompt("Enter value to be replaced with:"));
+                let nr=str.indexOf(a);
+                if(nr!==-1){
+                    str[nr]=m;
+                }
+                document.write(str);
+                break;
+            case 8:
+                let p= Number(prompt("Enter start_index:"));
+                let q= Number(prompt("Enter count:"));
+                let r= Number(prompt("Enter value :"));
+                str.splice(p,q,r);
+                document.write("Updated array:",str);
+                break;
+            case 9:
+                let v= Number(prompt("Enter start_index:"));
+                let t= Number(prompt("Enter count:"));
+                str.slice(v,t);
+                document.write("Updated array:",str);
+                break;
+            case 10:
+                let x= Number(prompt("Enter target_index_position:"));
+                let y= Number(prompt("Enter copy_start_index:"));
+                let z= Number(prompt("Enter copy_item_limit:"));
+                str.copyWithin(x,y,z);
+                document.write("Updated array:",str);
+                break;
+            default:
+                document.write("Invalid choice");
+        }
+        
+    </script>
+</body>
+</html>

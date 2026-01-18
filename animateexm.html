@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .square{
+            height:200px;
+            width:200px;
+            position: relative;
+            border:2px solid black;
+        }
+        .circle{
+            width: 30px;
+            height: 30px;
+            background-color: brown;
+            border-radius: 50%;
+            position:absolute;
+            animation: movingball 4s linear infinite;
+        }
+        @keyframes movingball{
+             0%{
+                top:0;
+                left:0;
+             }
+             25%{
+                top:0px;
+                left:170px;
+             }
+             50%{
+                top:170px;
+                left:170px;
+
+             }
+             75%{
+                top:170px;
+                left:0px;
+             }
+             100%{
+                top:0px;
+                left:0px;
+             }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="square">
+        <div class="circle">
+            
+            
+        </div>
+    </div>
+</body>
+</html>

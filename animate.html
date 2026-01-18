@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          display: flex;
+          height: 100vh;
+          width: auto;
+          /* align-items: center;
+          justify-content: center; */
+        }
+        .block{
+          position: relative;
+          width: 900px;
+          height: 500px;
+          left: 100px;
+          background-color: antiquewhite;
+        }
+        .base1{
+          position: absolute;
+          left: 0px;
+          top: 114px;
+          width: 150px;
+          height: 20px;
+          border: 3px solid black;
+        }
+        .base2{
+          position: absolute;
+          left: 186px;
+          top: 169px;
+          width: 150px;
+          height: 20px;
+          border: 3px solid black;
+        }
+        .base3{
+          position: absolute;
+          left: 387px;
+          top: 215px;
+          width: 150px;
+          height: 20px;
+          border: 3px solid black;
+        }
+        .box{
+          position: absolute;
+          left: 602px;
+          top: 258px;
+          width: 100px;
+          height: 100px;
+          border: 3px solid black;
+        }
+        .ball{
+          position: absolute;
+          left: 69px;
+          top: 92px;
+          width: 20px;
+          height: 20px;
+          border: 2px solid blueviolet;
+          border-radius: 50%;
+          background-color: blueviolet;
+          animation: bounce 3s  linear forwards;
+        }
+        @keyframes bounce {
+  
+  0% {
+    top: 0px;
+    left: 75px;
+  }
+  15% {
+    top: 95px;
+    left: 75px;
+  }
+  25% {
+    top: 40px;
+    left: 140px;
+  }
+  40% {
+    top: 150px;
+    left: 215px;
+  }
+  50% {
+    top: 90px;
+    left: 300px;
+  }
+  65% {
+    top: 200px;
+    left: 420px;
+  }
+  75% {
+    top: 130px;
+    left: 520px;
+  }
+  100% {
+    top: 260px;
+    left: 640px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="block">
+     <div class="ball"></div>
+     <div class="base1"></div>
+     <div class="base2"></div>
+     <div class="base3"></div>
+     <div class="box"></div>
+    </div>
+</body>
+</html>

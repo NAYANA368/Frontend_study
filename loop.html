@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employees = [
+  { id: 101, name: "Asha", department: "HR", scores: [70, 80, 90] },
+  { id: 102, name: "Ravi", department: "IT", scores: [60, 75, 85] },
+  { id: 103, name: "Neha", department: "Finance", scores: [88, 92, 95] }
+];
+        // document.write("Task 1"+"<br>");
+        // for(i in employees){
+        //     document.write(i+"<br>");
+         
+        
+        // for(j in employees[i]){
+        //     document.write(j+" "+employees[i][j]+"<br>");
+        
+        // }
+        // document.write("<br>");
+        // }
+        
+
+        // document.write("Task 2"+"<br>"+"<br>");
+        // employees.forEach((name)=>{
+        //     document.write("Name:"+" "+name.name+"<br>");
+        //     document.write("Department:"+" "+name.department+"<br>"+"<br>");
+        // });
+
+        // document.write("Task 3"+"<br>"+"<br>");
+        // let names=employees.map((name)=>name.name.toUpperCase());
+        // document.write(names);
+
+        document.write("Task 4"+"<br>"+"<br>");
+        function average(scores){
+            let a=0;
+        
+        for(i=0;i<scores.length;i++){
+            a=scores[i]+a;
+            
+        }
+        avg=a/scores.length;
+        return avg;
+    }
+      document.write("Average:"+avg(employees.scores));  
+
+    </script>
+</body>
+</html>
