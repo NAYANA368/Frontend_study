@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // try{
+        //     fun("Have fun with coding");
+        // }
+        // catch(errorCatcher){
+        //     document.write("An error occured:"+errorCatcher);
+        // }
+        // finally{
+        //     document.write("<br> code executed");
+        // }
+
+    //     function print(a,b){
+    //         try{
+    //             let divide=a/b;
+    //             document.write("Result:"+divide);
+    //         }
+    //         catch(e){
+    //             console.error("Denominator cannot be zero"+e.message);
+    //         }
+    //     }
+    //     print(10,0);
+
+    let myDetails={
+        firstname:"Ashish",
+        lastname:"Khosla",
+        address:"",
+        get fullname(){
+            return this.firstname+" "+this.lastname;
+        },
+        set newAddress(adr){
+            this.address=adr;
+        }
+    };
+myDetails.newAddress="Punjab";
+document.write(myDetails.fullname);
+document.write(myDetails.address);
+     </script>
+
+</body>
+</html>

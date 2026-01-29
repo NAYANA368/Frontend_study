@@ -1,0 +1,48 @@
+<JS - setting css properties using js
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- syntax:
+     var object = document.createAttribute("html attribute_name");
+        object.value = "attribute_value";
+        element.setAttributeNode(object);
+        
+    updating existing attribute:
+    element.setAttribute("attribute_name", "new_attribute_value");
+      -->
+    <!-- <p id="para"> Hello All!!!</p>
+    <button >click me</button>
+   
+    <script>
+    var button = document.querySelector("button");
+    var para = document.getElementById("para");
+    button.addEventListener("click", function(){
+        para.style.border = "2px solid blue";
+        para.style.width = "300px";
+        para.style.backgroundColor = "yellow";
+    });
+     button.addEventListener("dblclick", function(){
+        para.style.border = "2px solid red";
+        para.style.width = "300px";
+        para.style.backgroundColor = "lightgreen";
+    });
+
+    
+
+    </script> -->
+
+    <p id="para">Hello</p>
+    <script>
+        var para = document.getElementById("para");
+        var attr = document.createAttribute("class");
+        attr.value = "text Style";
+        para.setAttributeNode("attr");
+    </script>
+</body>
+</html>

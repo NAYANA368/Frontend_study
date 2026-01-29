@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <div id="box">
+    <p id="para">This is a child content</p>
+    <button id="btn">Click Me!</button>
+   </div>  -->
+   <div id="line">
+    hello all welcome back to planet<b> earth </b>
+   </div>
+   <button id="btn">Click Me</button>
+   <script>
+    // var parent=document.getElementById("box");
+    // document.getElementById("btn").onclick=
+    // function(){
+    //     parent.replaceChild(document.createTextNode("This is the new content"),
+    //     document.getElementById("para")
+    // );
+    // };
+
+    const btn=document.getElementById("btn");
+    const lineDiv=document.getElementById("line");
+    btn.addEventListener('click',function(){
+        alert(lineDiv.textContent);
+    });
+   </script>
+</body>
+</html>

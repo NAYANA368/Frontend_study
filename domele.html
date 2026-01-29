@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 10%;
+            align-items: center;
+            border: 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="box">
+        <button id="btn">Click Me</button>
+    </div>
+    <script>
+        var div=document.getElementById("box");
+        document.getElementById("btn").onclick=function(){
+            var p=document.createElement("p");
+            var text=document.createTextNode("Hello World!");
+            p.appendChild(text);
+            div.appendChild(p);
+        } -->
+
+
+        <!-- <div id="box">
+        <button id="btn">Click Me</button>
+    </div>
+    <script>
+        var div=document.getElementById("box");
+        document.getElementById("btn").onclick=function(){
+            var p=document.createElement("p");
+            var text=document.createTextNode("Hello World!");
+            p.appendChild(text);
+            div.appendChild(p);
+            // div.removeChild(p);
+            p.removeChild(text);
+        } -->
+        <!-- </script> -->
+        <div id="box">
+            <img src="image/tshirt.jpg"width="100px" height="100px">
+            <button id="btn">CLICK HERE</button>
+            <p>BUY MEN'S CLOTHES HERE!</p>
+            </div>
+            <div id="box1">
+            <img src="image/wc.jpg"width="100px" height="100px">
+            <button id="btn1">CLICK HERE</button>
+            <p>BUY WOMEN'S CLOTHES HERE!</p>
+        </div>
+        <script>
+            var btn=document.getElementById("btn");
+            var btn1=document.getElementById("btn1");
+            var Click=document.getElementById("btn1").onclick=function(){
+                btn.remove();
+            }
+            var Click=document.getElementById("btn").onclick=function(){
+                btn1.remove();
+            
+            }
+        </script>
+            
+    
+</body>
+</html>

@@ -36,18 +36,31 @@
         // document.write(names);
 
         document.write("Task 4"+"<br>"+"<br>");
-        function average(scores){
-            let a=0;
-        
-        for(i=0;i<scores.length;i++){
-            a=scores[i]+a;
-            
+        function averageScore(scores){
+            let s=0;
+            for(i=0;i<scores.length;i++){
+            s=scores[i]+s;
+            }
+            return s/scores.length;
         }
-        avg=a/scores.length;
-        return avg;
-    }
-      document.write("Average:"+avg(employees.scores));  
+        let avg = employees.map((employees)=>averageScore(employees.scores));
+        document.write(avg);
 
+        // document.write("Task 5"+"<br>"+"<br>");
+        // function averageScore(scores){
+        //     let s=0;
+        //     for(i=0;i<scores.length;i++){
+        //     s=scores[i]+s;
+        //     }
+        //     return s/scores.length;
+            
+        // }
+        // let avg = employees.map((employees)=>averageScore(employees.scores));
+        // let name = employees.map((employees)=>employees.name);
+        // document.write(name+"<br>");
+        // document.write(avg);
+        
+        
     </script>
 </body>
 </html>

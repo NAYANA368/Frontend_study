@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const studentsData = [
+  { id: 1, name: "Anu", marks: [80, 75, 90] },
+  { id: 2, name: "Rahul", marks: [60, 65, 70] },
+  { id: 3, name: "Meera", marks: [95, 92, 88] }
+];
+// task1
+// function calculateAverage(marks){
+//     let sum=0;
+//     for(i=0;i<marks.length;i++){
+        
+//          sum = marks[i]+sum;
+        
+        
+//     }
+//     return sum/marks.length;
+// }
+// let avg = studentsData.map((studentsData)=>calculateAverage(studentsData.marks));
+// avg.forEach((avg)=>{
+//     document.write(avg+"<br>")
+// });
+
+//Task 2
+// class Results{
+//     constructor(id,name,marks){
+//         this.id = id;
+//         this.name = name;
+//         this.marks = marks;
+//     }
+//     getAverage(){
+//         let sum=0;
+//         for(let i=0;i<this.marks.length;i++){
+//             sum=this.marks[i]+sum;
+//         }
+//         return sum/this.marks.length;
+//     }
+//     getResult(){
+//         let avg = this.getAverage();
+//         if(avg>=90){
+//             return "Distinction";
+//         }else if(avg>=80 && avg<90){
+//             return "Passed";
+//         }else{
+//             return "Fail";
+//         }
+//     }
+// }
+// studentsData.forEach((student)=>{
+// let Result = new Results(student.id,student.name,student.marks);
+// document.write("Name:"+Result.name+"<br>");
+// document.write("id:"+Result.id+"<br>");
+// document.write("Average:"+Result.getAverage()+"<br>");
+// document.write("Result:"+Result.getResult()+"<br><br>");
+// });
+
+//Task 4
+
+// class Details{
+//     constructor(name,marks){
+        
+//         this.name = name;
+//         this.marks = marks;
+//     }
+//     calculateAverage(){
+//         let sum=0;
+//         for(let i=0;i<this.marks.length;i++){
+//             sum=this.marks[i]+sum;
+//         }
+//         return sum/this.marks.length;
+//     }
+//     getResult(){
+//         let avg = this.calculateAverage();
+//         if(avg>=90){
+//             return "Distinction";
+//         }else if(avg>=80 && avg<90){
+//             return "Passed";
+//         }else{
+//             return "Fail";
+//         }
+//     }
+
+// }
+
+//     // let avg=studentsData.map((studentsData)=>calculateAverage(studentsData.marks));
+//     studentsData.map((student)=>{
+//      let Result = new Details(student.name,student.marks);
+//      document.write("Name:"+Result.name+",");
+//      document.write("Average:"+Result.calculateAverage()+",");
+//      document.write("Result:"+Result.getResult()+"<br>")
+//     });
+
+// let longestword="";
+//         for(word of arr){
+//             if(word.length>longestword.length){
+//                 longestword=word;
+//             }
+//         }
+//         document.write("Longest word = "+longestword);
+//      
+
+// Task 5
+//  function findTopper(students) {
+//   let highestAvg = 0;
+//   let topperName = "";
+
+//   for (let i = 0; i < students.length; i++) {
+//     let marks = students[i].marks;
+//     let sum = 0;
+
+//     for (let j = 0; j < marks.length; j++) {
+//       sum += marks[j];
+//     }
+
+//     let avg = sum / marks.length;
+
+//     if (avg > highestAvg) {
+//       highestAvg = avg;
+//       topperName = students[i].name;
+//     }
+//   }
+
+//   return topperName;
+// }
+// document.write("Topper: " + findTopper(studentsData));
+
+//Task 3
+
+class students{
+  constructor(id,name,marks){
+    this.name=name;
+    this.id=id;
+    this.marks=marks;
+  }
+}
+calculateAverage(avg){
+    let sum=0;
+    for(i=0;i<marks.length;i++){
+        
+         sum = marks[i]+sum;
+        
+        
+    }
+    return sum/marks.length;
+}
+let S = studentsData.map((student) => new Student(student.id, student.name, student.marks));
+document.write(S);
+    </script>
+
+   
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            align-items: center;
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 id="box">Welcome</h1>
+        <form>
+            <input type="text" oninput="alert('Type your name')"><br><br>
+            <button type="submit" onclick="alert('Submitted')" value="Submit">Submit</button>
+        </form>
+        <p id="box1">The home page is the first page of a website that welcomes users and gives an overview of what the site is about. It helps visitors easily navigate to different sections such as services, products, or contact information. A well-designed home page is simple, attractive, and user-friendly, creating a positive first impression and guiding users to the content they are looking for.</p>
+    </div>
+    <script>
+        document.getElementById("box").addEventListener("click",function(){
+            alert("Welcome to your home page");
+        });
+        document.getElementById("box1").addEventListener("mousemove",function(){
+            alert("Description about Home Page");
+        });
+    </script>
+</body>
+</html>

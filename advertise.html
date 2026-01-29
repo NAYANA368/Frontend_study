@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Demo</title>
+    <style>
+        .icon{
+            width: 25px;
+            height: 25px;
+            position: relative;
+            bottom: 281px;
+            left: 280px;
+            cursor: pointer;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Dummy content */
+        #dummy {
+            height: 1500px;
+            padding: 20px;
+        }
+
+        /* Advertisement box */
+        #advertisement {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 320px;
+            padding: 10px;
+            background-color: #f9cc74;
+            border: 2px solid black;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            display: none;
+            z-index: 1000;
+        }
+
+        #advertisement h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        #advertisement img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="dummy">
+        <h1>Welcome to the Main Content</h1>
+        <p>Scroll down to see more content...</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eius non maxime modi accusantium vel
+             nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis? 
+             vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis? 
+             vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis? 
+             vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis? 
+             vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis?
+              vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis?
+               vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis? 
+               vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis? 
+               vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis? 
+               vel nesciunt expedita, laudantium id, eaque placeat ut omnis natus, blanditiis assumenda voluptas dolorum sit veritatis?</p>
+             </p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint 
+                illo. Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. Ullam id sint sed! 
+                Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. Ullam id sint sed! Fugit labore aut totam perferendis 
+                minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est 
+                 accusantium dolorum sint illo. Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. 
+                  Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint 
+                illo. Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. Ullam id sint sed! 
+                Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. Ullam id sint sed! Fugit labore aut totam perferendis 
+                minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est 
+                 accusantium dolorum sint illo. Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. 
+                  Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint 
+                illo. Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. Ullam id sint sed! 
+                Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. Ullam id sint sed! Fugit labore aut totam perferendis 
+                minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est 
+                 accusantium dolorum sint illo. Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quibusdam est maxime accusantium dolorum sint illo. 
+                  Ullam id sint sed! Fugit labore aut totam perferendis minima sed adipisci nesciunt? Lorem ipsum dolor sit amet consectetur </p>
+    </div>
+
+    <!-- Advertisement -->
+    <div id="advertisement">
+        <h2>Advertisement</h2>
+        <p>This is where the advertisement content will go.</p>
+        <img src="image/car1.png" alt="car">
+        <div class="icon">
+        <img src="image/square-xmark-solid-full.svg" alt="close">
+        </div>
+    </div>
+    <script>
+        const ad = document.getElementById("advertisement");
+
+        setTimeout(() => {
+            ad.style.display = "block";
+        }, 1000);
+        var close = document.querySelector(".icon");
+        close.addEventListener("click",function(){
+            var adv= document.getElementById("advertisement");
+            adv.remove();
+        });
+    </script>
+
+</body>
+</html>

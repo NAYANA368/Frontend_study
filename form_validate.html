@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" name="myform" onsubmit="return(validate())">
+        <input name="user" type="text"></br>
+        <input name="email" type="text"></br>
+        <input name="pass" type="text"></br>
+        <input name="submit" type="submit">
+    </form>
+    <script>
+        function validate(){
+            if(document.myform.user.value==""){
+                alert("Please provide username..");
+                document.myform.username.focus();
+                return false;
+            }
+            else{
+                return true;
+            }
+            if(document.myform.email.value==""){
+                alert("please provide email");
+                document.myform.email.focus();
+                return false;
+            }
+            else{
+                return true;
+            }
+            if(document.myform.pass.value==""){
+                alert("Please provide password");
+                document.myform.password.focus();
+                return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </body>
+    </html>

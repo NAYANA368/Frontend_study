@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            background: white;
+            padding: 50px 45px 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            width: 320px;
+            align-items: center;
+        }
+        .number{
+        width: 200px;
+        height: 100px;
+        padding: 12px;
+        margin-top: 10px;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;   
+        align-items: center;       
+        font-size: 50px;
+        font-weight: bold;
+        background-color: blueviolet;
+        }
+        .result{
+            
+        width: 200px;
+        height: 100px;
+        padding: 12px;
+        margin-top: 10px;
+        text-align: center;
+        align-items: center;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;   
+        align-items: center;       
+        font-size: 40px;
+        font-weight: bold;
+        }
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 19px;
+            border: 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+    <div class="number"></div>
+    <button id="btn">Click Here</button>
+    <div class="result"></div>
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+            var randomNum = Math.floor(Math.random() * 100) + 1;
+            document.querySelector(".number").textContent=randomNum;
+            
+            if(randomNum%2==0){
+                document.querySelector(".result").textContent="Number is Even";
+                var b1 = document.querySelector(".result");
+                b1.style.backgroundColor="green";
+            }else{
+                document.querySelector(".result").textContent="Number is Odd";
+                var b2 = document.querySelector(".result");
+                b2.style.backgroundColor="blue";
+            }
+    });
+    </script>
+</body>
+</html>
