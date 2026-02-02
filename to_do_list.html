@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            background: dodgerblue ;
+            padding: 25px 35px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            width: 320px;
+        }
+        
+        h1{
+            color: black;
+            text-align: center;
+            position: relative;
+            bottom: 4px;
+        }
+        input{
+            width: 50%;
+            position: relative;
+            bottom: 7px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #btn{
+            position: relative;
+            width: 20%;
+            bottom: 9px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button{
+            position: relative;
+            width: 20%;
+            bottom: 3px;
+            left: 6px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #dolist li {
+        margin-bottom: 10px;   /* space between items */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h1>To Do List</h1>
+        <input type="text" id="name">
+        <button id="btn">ADD</button>
+        <ul id="dolist"></ul>
+    </div>
+    <script>
+    const btn = document.getElementById("btn");
+    const todo = document.getElementById("dolist");
+    const input = document.getElementById("name");
+
+    btn.addEventListener("click", function () {
+        const value = input.value.trim();
+        if (value === "") return;
+        const li = document.createElement("li");
+        const text = document.createTextNode(value);
+        li.appendChild(text);
+        const delBtn = document.createElement("button");
+        delBtn.textContent = "Delete";
+        delBtn.addEventListener("click", function () {
+        todo.removeChild(li);
+        });
+
+        li.appendChild(delBtn);
+        todo.appendChild(li);
+
+        input.value = "";
+    });
+</script>
+
+    </script>
+</body>
+</html>

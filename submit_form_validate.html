@@ -145,7 +145,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         var form=document.querySelector(".form-box");
             form.style.border="3px solid black";
             form.style.boxShadow="0 20px 20px red";
-    }
+     }
 
     // ---- Email validation ----
     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -178,6 +178,11 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         
         document.getElementById("myForm").reset();
     }
+    // else {
+    //     var form=document.querySelector(".form-box");
+    //     form.style.border="3px solid red";
+    //     form.style.boxShadow="0 20px 20px red";
+    // }
 });
 </script>
 

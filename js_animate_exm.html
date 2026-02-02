@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width: 100px;
+            height: 100px;
+            background: purple;
+            border-radius: 100px;
+            position: absolute;
+        }
+        button{
+            position: relative;
+            top: 148px;
+            left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <button onclick="myMove()">Click Here</button>
+    <script>
+        var interval_id=null;
+        function myMove(){
+            var position=0;
+            var circle=document.getElementById("circle");
+            clearInterval(interval_id);
+            interval_id= setInterval(frame,1);
+            function frame(){
+                if(position>=1428){
+                    clearInterval(interval_id);
+                    position=0;
+                    interval_id=setInterval(frame1,1);
+                }else{
+                    position+=2;
+                    circle.style.left=position+"px";
+                    
+                }
+            }function frame1(){
+                if(position>=598){
+                    position=1420;
+                    clearInterval(interval_id);
+                    interval_id=setInterval(frame2,1);
+                }else{
+                    position+=2;
+                    circle.style.top=position+"px";
+                }   
+                
+            }function frame2(){
+                if(position<=0){
+                    position=598;
+                    clearInterval(interval_id);
+                    interval_id=setInterval(frame3,1);
+                }else{
+                    position-=2;
+                    circle.style.left=position+"px";
+                }
+            }function frame3(){
+                    if(position <= 0){
+                    clearInterval(interval_id);
+                    position = 0;
+                    // interval_id = setInterval(frame,1);
+                } else { 
+                    position-=2;
+                    circle.style.top = position + "px";
+                }
+
+            }
+        }
+    </script>
+        
+      
+        
+    
+
+
+
+
+
+
+</body>
+</html>

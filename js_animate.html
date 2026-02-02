@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle1,#circle2{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background: lime;
+            border-radius: 100px;
+            margin-bottom: 10px;
+            
+        }
+        #circle2{
+            background: red;
+            float: right;
+        }
+        button{
+            clear: both;
+            margin-top: 100px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <button onclick="myMove()">Move Circle</button>
+    <script>
+        var interval_id=null;
+        function myMove(){
+            var circle1=document.getElementById("circle1");
+            var circle2=document.getElementById("circle2");
+            var position=0;
+            clearInterval(interval_id);
+            interval_id=setInterval(frame,10);
+
+            function frame(){
+                if(position==900){
+                    clearInterval(interval_id);
+                }else{
+                    position++;
+                    circle1.style.left=position+"px";
+                    circle2.style.right=position+"px";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
