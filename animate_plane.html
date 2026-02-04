@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #plane{
+            position: absolute;
+            bottom: 225px;
+            left: 603px;
+        }
+        .rw{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="rw" src="image/rw.png"width="1550px" height="450px">
+        <img id="plane" src="image/plane.png" width="200px" height="200px">
+    </div>
+    <div>
+        <button onclick="takeof()">MOVE</button>
+    </div>
+</body>
+
+<script>
+
+let position = 603;     // start position
+let moving = false;
+let maxPosition = 0;
+
+const rw = document.getElementById("rw");
+const plane = document.getElementById("plane");
+
+function start(){
+    maxPosition = rw.clientWidth - plane.clientWidth;
+    moving = true;
+    requestAnimationFrame(takeof);
+}
+
+function takeof(){
+    if (!moving) return;
+
+    position += 3; // speed
+
+    if (position >= maxPosition - 400) { // takeoff point
+        moving = false;
+        flyUp();
+        return;
+    }
+
+    plane.style.left = position + "px";
+    requestAnimationFrame(takeof);
+}
+
+function flyUp(){
+    let bottom = 225;
+    let scale = 1;
+
+    function up(){
+        bottom += 4;
+        scale -= 0.01;
+
+        plane.style.bottom = bottom + "px";
+        plane.style.transform = `scale(${scale})`;
+
+        if(scale > 0.3){
+            requestAnimationFrame(up);
+        }
+    }
+    up();
+}
+
+        
+</script>
+</html>
