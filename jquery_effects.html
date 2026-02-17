@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Effects Demo</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body{
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        button{
+            margin: 5px;
+            padding: 10px 15px;
+        }
+
+        #box{
+            width: 200px;
+            height: 120px;
+            background: orange;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>jQuery Effects Example</h2>
+
+<button id="toggleBtn">Toggle</button>
+<button id="fadeInBtn">Fade In</button>
+<button id="fadeOutBtn">Fade Out</button>
+<button id="fadeToggleBtn">Fade Toggle</button>
+<button id="fadeToBtn">Fade To (30%)</button>
+<button id="slideUpBtn">Slide Up</button>
+<button id="slideDownBtn">Slide Down</button>
+<button id="slideToggleBtn">Slide Toggle</button>
+
+
+<div id="box"></div>
+
+ <script>
+        $(document).ready(function(){
+
+            // Toggle
+            $("#toggleBtn").click(function(){
+                $("#box").toggle();
+            });
+
+            // Fade In
+            $("#fadeInBtn").click(function(){
+                $("#box").fadeIn(1000);
+            });
+
+            // Fade Out
+            $("#fadeOutBtn").click(function(){
+                $("#box").fadeOut(1000);
+            });
+
+            // Fade Toggle
+            $("#fadeToggleBtn").click(function(){
+                $("#box").fadeToggle(1000);
+            });
+
+            // Fade To (Opacity Change)
+            $("#fadeToBtn").click(function(){
+                $("#box").fadeTo(1000, 0.3);
+            });
+
+            // Slide Up
+            $("#slideUpBtn").click(function(){
+                $("#box").slideUp(1000);
+            });
+
+            // Slide Down
+            $("#slideDownBtn").click(function(){
+                $("#box").slideDown(1000);
+            });
+
+            // Slide Toggle
+            $("#slideToggleBtn").click(function(){
+                $("#box").slideToggle(1000);
+            });
+
+        });
+    </script>
+
+
+
+</body>
+</html>

@@ -23,6 +23,12 @@ body{
   height: 250px;          
   object-fit: cover;      
 }
+
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 </style>
 
 </head>
@@ -41,7 +47,7 @@ body{
       <div class="navbar-nav">
         <a class="nav-link active" href="#">Home</a>
         <a class="nav-link active" href="#">Features</a>
-        <a class="nav-link active" href="#">About Us</a>
+        <a class="nav-link active" href="#about">About Us</a>
         <a class="nav-link active" href="#">Contact</a>
       </div>
     </div>
@@ -97,15 +103,15 @@ body{
 </div>
 </section>
 
-<section class="container-fluid p-0 bg-dark">
-  <div class="bg-dark text-white text-center p-4"> 
-    <h2>Welcome to the Bootstrap Carousel Demo</h2>
-    <p>Enjoy the slideshow of beautiful images powered by Bootstrap.</p>
+<section class="container-fluid p-0 bg-dark py-4">
+  <div class="bg-dark text-white text-center"> 
+    <h2>Explore To New Adventures</h2>
+    <p>Enjoy the beautiful sides of nature here.</p>
   </div>
-  <div class="container">
-  <div class="row g-5">
+  <div class="container py-3">
+  <div class="row g-3">
   <div class="col-3">
-  <div class="card h-100">
+  
   <div class="card" style="width: 18rem;">
   <img src="image/trek.jpg" class="card-img-top rounded-3 card-img" alt="...">
   <div class="card-body position-absolute z-3">
@@ -113,12 +119,12 @@ body{
     <p class="card-text text-color-dark">Trekking is more than just walking through nature,trekking allows you to connect deeply with the natural world.</p>
     <a href="soon.html" target="_blank" class="btn btn-primary">Explore</a>
     </div>
-  </div>
+  
 </div>
 </div>
   
   <div class="col-3">
-  <div class="card h-100">
+
   <div class="card" style="width: 18rem;">
   <img src="image/vac.png" class="card-img-top rounded-3 card-img" alt="...">
   <div class="card-body position-absolute z-3">
@@ -127,20 +133,20 @@ body{
     <a href="soon_1.html" target="_blank" class="btn btn-primary">Explore</a>
     </div>
     </div>
-    </div>
+    
   </div>
 
   <div class="col-3">
-    <div class="card h-100">
+    
   <div class="card" style="width: 18rem;">
   <img src="image/explore.png" class="card-img-top card-img" alt="...">
   <div class="card-body position-absolute z-3">
     <h5 class="card-title">Explore</h5>
     <p class="card-text text-white">Exploring the world opens the door to unforgettable experiences, breathtaking destinations, and diverse cultures.</p>
-    <a href="soon.html" target="_blank" class="btn btn-primary">Explore</a>
+    <a rel="stylesheet" href="soon.html"class="btn btn-primary">Explore</a>
     </div>
     </div>
-    </div>
+    
   </div>
 
   <div class="col-3">
@@ -152,11 +158,36 @@ body{
     <a href="soon_1.html" class="btn btn-primary">Explore</a>
 
     </div>
-    </div>
+    
   </div>
 </div>
   </div>
 
+</section>
+
+<section class="container-fluid p-0 py-5"id="about">
+  <div class="bg-white text-dark text-center p-4">
+    <h2>ABOUT PAGE</h2>
+    <p class="text-center">Spending time in nature refreshes the mind, strengthens the body, and restores inner harmony. 
+      Every sunrise, every breeze, and every landscape tells a story of beauty, resilience, and wonder.</p>
+    <p>Exploring the world opens the door to unforgettable experiences, breathtaking destinations, and diverse cultures. From peaceful beaches and misty mountains to vibrant cities and hidden villages, every journey brings a new story to tell.
+        Travel is not just about visiting places — it’s about discovering new perspectives, local traditions, and moments of joy.
+        Whether you’re seeking adventure, relaxation, or cultural exploration, the world is full of wonders waiting to be explored.</p>
+    <p class="text-color-dark">We believe in responsible travel and sustainable practices that protect the environment. 
+      Our journeys are designed to respect nature, support local communities, and preserve natural beauty for future generations.</p>
+  </div>
+   
+</section>
+
+<section class="container-fluid p-0">
+  <div class="bg-dark text-dark text-center py-2">
+  <div class="icon">
+  <img src="image/instagram-1.svg" width="25px" height="25px">
+  <img src="image/facebook-color-svgrepo-com.png" width="24px" height="24px">
+  <img src="image/whatsapp-svgrepo-com.png" width="24px" height="24px">
+</div>
+</div>
+</div>
 </section>
 
 <script src="js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: absolute;
+            justify-content: center;
+            
+        }
+        div{
+          margin: 100px; 
+          justify-content: center; 
+          background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <span><h2>jQuery</h2>
+        <button id="btn">Click Here</button>
+        </span>
+        <p id="para">jQuery is a fast, lightweight, and feature-rich JavaScript library that simplifies tasks like HTML DOM manipulation, event handling, animations, and AJAX. 
+            It was created to help developers write less code while achieving more functionality.</p>
+        <input id="dt" type="text"></input>
+        <button id="btn1">SUBMIT</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("h2").click(function(){
+                alert("Page about jQuery")
+            });
+        });
+        $(document).ready(function(){
+            $("#btn").dblclick(function(){
+                alert("About jQuery"+"\n"+$("#para").text());
+            });
+        });
+        $(document).ready(function(){
+            $("p").mouseenter(function(){
+                $("p").hide()
+            });
+        });
+        $(document).ready(function(){
+            $("p").mouseleave(function(){
+                $("p").show()
+            });
+        });
+        $(document).ready(function(){
+            $("#dt").keydown(function(){
+                alert("Entered a value")
+            });
+        });
+        $(document).ready(function(){
+            $("#dt").keypress(function(){
+                alert("Started Typing")
+            });
+        });    
+        $(document).ready(function(){
+            $("#dt").keyup(function(){
+                alert("Stopped")
+            });
+        });
+        $(document).ready(function(){
+            $("#btn1").hover(function(){
+                alert("Submitted")
+            });
+        });
+        
+    </script>
+</body>
+</html>
